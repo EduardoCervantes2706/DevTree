@@ -1,10 +1,10 @@
 import { Router } from "express";
 
-const router = Router()
+const router = Router();
 
 // Autenticación y registro
 router.post('/auth/register', (req, res) => {
-    res.json({ msg: "Petición POST" })
+    console.log(req.body)
 });
 
-export default router
+export default router;
