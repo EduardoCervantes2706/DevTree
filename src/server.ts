@@ -1,14 +1,7 @@
 import express from 'express'
+import router from './router'
 const app = express()
 
-// Routing
-
-app.get('/', (req, res) => {
-    res.send('Página Principal')
-})
-
-app.get('/login', (req, res) => {
-    res.send('Login de usuarios')
-})
+app.use('/', router)
 
 export default app
